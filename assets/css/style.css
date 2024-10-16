@@ -1,0 +1,223 @@
+:root {
+    --color-1: rgba(39, 61, 144, 1);
+    --color-2: rgba(251, 174, 66, 1);
+}
+
+.footer {
+    background-color: var(--color-1);
+}
+
+.bg-primary {
+    background-color: var(--color-1) !important;
+}
+
+.bg-yellow {
+    background-color: var(--color-2) !important;
+    border-color: var(--color-2);
+}
+
+.btn-light {
+    color: var(--color-1);
+}
+
+.card-title {
+    color: var(--color-1);
+}
+
+.card-body .btn-primary {
+    background-color: var(--color-1);
+}
+
+.card-text {
+    color: #000;
+}
+
+.a-reset {
+    color: var(--color-1);
+    text-decoration: none;
+}
+
+.btn.btn-primary {
+    background-color: var(--color-1);
+    width: auto;
+    color: #fff;
+}
+
+.btn.btn-primary:hover {
+    background-color: var(--color-2) !important;
+}
+
+.bg-secondary {
+    background-color: var(--color-2) !important;
+}
+
+.text-primary {
+    color: var(--color-1) !important;
+}
+
+.text-yellow {
+    color: var(--color-2);
+}
+
+.btn.btn-primary:hover {
+    background-color: var(--color-2);
+    border-color: var(--color-2);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbarNav .navbar-nav .nav-item {
+    padding: 16px 15px;
+}
+
+#navbarNav .navbar-nav .nav-item .nav-link {
+    color: var(--color-1);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#navbarNav .navbar-nav .nav-item .nav-link:hover,
+#navbarNav .navbar-nav .nav-item .nav-link.active {
+    color: var(--color-2);
+}
+
+#navbarNav .navbar-nav .nav-item .nav-link.btn.btn-primary:hover {
+    background-color: var(--color-2);
+    border-color: var(--color-2);
+}
+
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    opacity: 0.8;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
+    background-color: var(--color-1);
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: var(--color-1);
+    opacity: 1;
+}
+
+.carousel-indicator-item {
+    background-color: var(--color-1) !important;
+}
+
+#squat-img {
+    background-image: url(../images/squat.jpg);
+    width: 480px;
+    height: calc(100% - 3rem);
+    border-radius: 10px;
+    background-position-x: -249px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.plan-card {
+    border: 2px solid var(--color-2);
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.2s;
+    min-height: 450px;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-1);
+}
+
+.plan-card .check-icon {
+    background-image: url(../images/Icon/Check.svg);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+    background-color: var(--color-2);
+    color: #fff;
+    cursor: pointer;
+}
+
+.plan-card:hover .price {
+    color: #fff !important;
+}
+
+.plan-card:hover .btn {
+    background-color: #fff;
+    color: var(--color-2);
+    border-color: var(--color-2);
+}
+
+.plan-card:hover .check-icon {
+    background-image: url(../images/Icon/Check_white.svg);
+}
+
+.plan-card .btn:hover {
+    background-color: #fff !important;
+}
+
+.subscribe-section {
+    background-image: url(../images/subscribe-section.jpg);
+    background-size: cover;
+    height: 494px;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+}
+
+#signin,
+#signup {
+    height: calc(100vh + 100px);
+    background-image: url(../images/Signin\ Baner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* For tablets: */
+    .subscribe-section>.subscribe-form {
+        left: 14% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile: */
+    .subscribe-section {
+        background-position-x: 50%;
+        background-size: 166%;
+        background-repeat: no-repeat;
+        background-position-y: 71%;
+        height: 200px;
+        padding: 0 !important;
+    }
+
+    .subscribe-section>.subscribe-form {
+        top: 53% !important;
+        left: 2% !important;
+    }
+
+    #inspiring-section .container {
+        padding-bottom: 0 !important;
+    }
+
+    #inspiring-section .img-small1,
+    #inspiring-section .img-small2 {
+        display: none;
+    }
+
+    #plan-section {
+        padding-bottom: 0 !important;
+    }
+}

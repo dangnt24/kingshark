@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg p-0">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/Logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white" href="signin.html">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <form action="" method="post">
+            <div class="w-100 position-relative" id="signup">
+                <div class="text-center px-5 py-3 position-absolute" style="width: 490px; border-radius: 8px; left: 8%; top: 5%; background-color: rgba(255, 255, 255, 0.6);">
+                    <h2 class="text-primary fw-bold">Create An Account</h2>
+                    <div class="my-2">Register as a member to enjoy many privileges and free trial courses</div>
+                    <div class="mb-3">
+                        <input type="text" id="phone" name="phone" class="form-control" placeholder="Your phone number" style="border-color: #273d90;" required>
+                    </div>
+                    <div><input type="password" id="password" name="password" class="form-control" placeholder="Password" style="border-color: #273d90;" required></div>
+                    <div class="my-3"><input type="text" id="name" name="name" class="form-control" placeholder="Name" style="border-color: #273d90;" required></div>
+                    <div class="my-3"><input type="text" id="birthday" name="birthday" class="form-control" placeholder="Birthday" style="border-color: #273d90;" required></div>
+                    <div class="my-3"><input type="email" id="email" name="email" class="form-control" placeholder="Email" style="border-color: #273d90;" required></div>
+                    <div class="my-3"><input type="text" id="sex" name="sex" class="form-control" placeholder="Sex" style="border-color: #273d90;" required></div>
+                    <div class="my-3">
+                        <input type="radio" name="type" value="Free Trial" class="p-3" style="width: 20px; height: 20px; vertical-align: middle; cursor: pointer;"> <b>FREE TRIAL</b>
+                        <input type="radio" name="type" value="Member" class="ms-5" style="width: 20px; height: 20px; vertical-align: middle; cursor: pointer;"> <b>MEMBER</b>
+                    </div>
+                    <div><button type="submit" class="btn btn-primary py-2 px-5" style="width: 90%;">CREATE AN ACCOUNT</button></div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer class="bg-primary text-white text-center pt-4">
+        <div class="container">
+            <div class="row text-start px-5">
+                <div class="col-md-3">
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="index.html" class="text-white a-reset" style="font-weight: 600;">HOME</a></li>
+                        <li class="mb-3"><a href="about.html" class="text-white a-reset" style="font-weight: 600;">ABOUT</a></li>
+                        <li class="mb-3"><a href="services.html" class="text-white a-reset" style="font-weight: 600;">SERVICES</a></li>
+                        <li class="mb-3"><a href="news.html" class="text-white a-reset" style="font-weight: 600;">NEWS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-7">
+                    <h6 class="mb-3">CONTACT</h6>
+                    <div style="font-weight: 600;">KING SHARK FITNESS CENTER</div>
+                    <div>1 Ly Tu Trong, An Phu, Ninh Kieu, TP. Can Tho</div>
+                    <div>Email: <a href="mailto:kingshark@gmail.com" class="a-reset text-white">kingshark@gmail.com</a></div>
+                    <div>Hotline: <a href="tel:18001234" class="a-reset text-white" style="font-weight: 600;">1800 1234</a></div>
+                </div>
+                <div class="col-md-2">
+                    <h6>FOLLOW US</h6>
+                    <div>
+                        <a class="a-reset" href="#" class="text-white me-3">
+                            <img src="assets/images/Icon/Facebook.svg" alt="Facebook" style="width: 40px; height: 40px;">
+                        </a>
+                        <a class="a-reset" href="#" class="text-white me-3">
+                            <img src="assets/images/Icon/Instagram.svg" alt="Instagram" style="width: 40px; height: 40px;">
+                        </a>
+                        <a class="a-reset" href="#" class="text-white">
+                            <img src="assets/images/Icon/Youtube.svg" alt="YouTube" style="width: 40px; height: 40px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="opacity: 1; border-color: white;">
+        <div class="pt-3 pb-4">
+            Copyright by King Shark Fitness 2024. All rights reserved.
+        </div>
+    </footer>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<?php
+session_start();
+if (isset($_GET["logout"])) {
+    session_destroy();
+    header("Location: signin.html");
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Shark Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg p-0">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/Logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white" href="signin.html">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <img src="assets/images/service-banner.jpg" alt="Banner" class="img-fluid w-100">
+
+    <div class="container text-center py-5" id="services">
+        <h2 class="text-primary">King Shark Fitness Services</h2>
+        <p class="lead">Tailored Workouts, Expert Guidance, and Comprehensive Programs to Meet All Your Fitness Needs</p>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <a href="service_details.html" class="a-reset">
+                    <div class="card mb-4" style="background-color: #E2E4EA; height: 520px">
+                        <img src="assets/images/services1.png" class="card-img-top p-3" alt="Personal Training">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-bold fw-bold">Personal Training</h5>
+                                <p class="card-text p-3 pt-2">Get customized workouts and one-on-one coaching from our expert trainers to achieve your specific fitness goals.</p>
+                            </div>
+                            <div><a href="service_details.html" class="btn btn-primary w-100">Learn More</a></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="service_details.html" class="a-reset">
+                    <div class="card mb-4" style="background-color: #E2E4EA; height: 520px">
+                        <img src="assets/images/services2.png" class="card-img-top p-3" alt="Personal Training">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-bold">Gym</h5>
+                                <p class="card-text p-3 pt-2">Whether you are a beginner or experienced, you need a suitable exercise program.</p>
+                            </div>
+                            <div><a href="service_details.html" class="btn btn-primary w-100">Learn More</a></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="service_details.html" class="a-reset">
+                    <div class="card mb-4" style="background-color: #E2E4EA; height: 520px">
+                        <img src="assets/images/services3.png" class="card-img-top p-3" alt="Personal Training">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-bold">Yoga</h5>
+                                <p class="card-text p-3 pt-2">We create an authentic Yoga environment with high-end, outstanding amenities for true Yoga believers.</p>
+                            </div>
+                            <div><a href="service_details.html" class="btn btn-primary w-100">Learn More</a></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="service_details.html" class="a-reset">
+                    <div class="card mb-4" style="background-color: #E2E4EA; height: 520px">
+                        <img src="assets/images/services4.png" class="card-img-top p-3" alt="Personal Training">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-bold">Boxing</h5>
+                                <p class="card-text p-3 pt-2">Boxing is a unique and strong sport, but it is not a sport exclusively for men. Today, more and more women choose this sport to lose fat, lose weight and exercise.</p>
+                            </div>
+                            <div><a href="service_details.html" class="btn btn-primary w-100">Learn More</a></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="service_details.html" class="a-reset">
+                    <div class="card mb-4" style="background-color: #E2E4EA; height: 520px">
+                        <img src="assets/images/services5.png" class="card-img-top p-3" alt="Personal Training">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-bold">Aerobic</h5>
+                                <p class="card-text p-3 pt-2">Nowadays, to improve health, enhance spirit and keep the body healthy, people often turn to aerobics</p>
+                            </div>
+                            <div><a href="service_details.html" class="btn btn-primary w-100">Learn More</a></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="service_details.html" class="a-reset">
+                    <div class="card mb-4" style="background-color: #E2E4EA; height: 520px">
+                        <img src="assets/images/services6.png" class="card-img-top p-3" alt="Personal Training">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-bold">Zumba</h5>
+                                <p class="card-text p-3 pt-2">GAre you interested in vibrant, seductive dances? Then Zumba is the ideal choice for you.</p>
+                            </div>
+                            <div><a href="service_details.html" class="btn btn-primary w-100">Learn More</a></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-primary text-white text-center pt-4">
+        <div class="container">
+            <div class="row text-start px-5">
+                <div class="col-md-3">
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="index.html" class="text-white a-reset" style="font-weight: 600;">HOME</a></li>
+                        <li class="mb-3"><a href="about.html" class="text-white a-reset" style="font-weight: 600;">ABOUT</a></li>
+                        <li class="mb-3"><a href="services.html" class="text-white a-reset" style="font-weight: 600;">SERVICES</a></li>
+                        <li class="mb-3"><a href="news.html" class="text-white a-reset" style="font-weight: 600;">NEWS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-7">
+                    <h6 class="mb-3">CONTACT</h6>
+                    <div style="font-weight: 600;">KING SHARK FITNESS CENTER</div>
+                    <div>1 Ly Tu Trong, An Phu, Ninh Kieu, TP. Can Tho</div>
+                    <div>Email: <a href="mailto:kingshark@gmail.com" class="a-reset text-white">kingshark@gmail.com</a></div>
+                    <div>Hotline: <a href="tel:18001234" class="a-reset text-white" style="font-weight: 600;">1800 1234</a></div>
+                </div>
+                <div class="col-md-2">
+                    <h6>FOLLOW US</h6>
+                    <div>
+                        <a class="a-reset" href="#" class="text-white me-3">
+                            <img src="assets/images/Icon/Facebook.svg" alt="Facebook" style="width: 40px; height: 40px;">
+                        </a>
+                        <a class="a-reset" href="#" class="text-white me-3">
+                            <img src="assets/images/Icon/Instagram.svg" alt="Instagram" style="width: 40px; height: 40px;">
+                        </a>
+                        <a class="a-reset" href="#" class="text-white">
+                            <img src="assets/images/Icon/Youtube.svg" alt="YouTube" style="width: 40px; height: 40px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="opacity: 1; border-color: white;">
+        <div class="pt-3 pb-4">
+            Copyright by King Shark Fitness 2024. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
