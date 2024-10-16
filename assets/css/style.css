@@ -220,4 +220,25 @@ body {
     #plan-section {
         padding-bottom: 0 !important;
     }
+
+    #signin, #signup {
+        height: calc(100vh - 100px);
+    }
+
+    #signin>div,
+    #signup>div {
+        width: 100% !important;
+        left: 0 !important;
+        top: 50% !important;
+        transform: translateY(-50%);
+    }
+
+    #signin #signin-btn {
+        text-align: center !important;
+        margin-top: 12px !important;
+    }
+
+    #signup #signup-btn {
+        padding: 12px 24px !important;
+    }
 }
