@@ -221,10 +221,14 @@ body {
         padding-bottom: 0 !important;
     }
 
-    #signin, #signup {
+    #signin {
         height: calc(100vh - 100px);
     }
 
+    #signup {
+        height: 100vh;
+    }
+    
     #signin>div,
     #signup>div {
         width: 100% !important;
